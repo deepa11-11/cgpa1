@@ -1,0 +1,245 @@
+/* Style for container */
+.one{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+
+    text-align: center;
+}
+   
+
+    .one h1 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .one h3 {
+        font-size: 24px;
+        color: #555;
+        font-weight: bold;
+    }
+
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 6px solid #9be7d8; /* Different border color */
+
+    border-radius: 5px;
+    background-color: #000000;
+    text-align: center;
+    border-radius: 26px;
+    color: rgb(255, 255, 255);
+}
+.container label{
+    color: white;
+}
+/* Style for label */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for buttons */
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Style for label */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for each button individually */
+button:nth-of-type(1) {
+    background-color: #e02727;
+}
+
+button:nth-of-type(2) {
+    background-color: #e67e22;
+}
+
+button:nth-of-type(3) {
+    background-color: #b2e748;
+}
+
+button:nth-of-type(4) {
+    background-color: #8e44ad;
+}
+.two{
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(315deg, #e1583c 0%, #f17e7e 74%);
+
+
+  }
+  
+  .container-fluid {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(315deg, #3f73ec 0%, #ab62ec 74%);
+
+  }
+  
+  h3 {
+    color: #333;
+    text-align: center;
+  }
+  
+  label {
+    color: #555;
+    font-weight: bold;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    align-items: center;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #gpasem1 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    align-items: center;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .col-12 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(315deg, #7095ea 0%, #c089f0 74%);
+
+    
+  }
+  
+  h3 {
+    color: #070707;
+
+  }
+  
+  label {
+    color: #050a0e;
+    font-weight: bold;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #gpasem2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #343a40;
+  }
+   
+  #gpasem3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #343a40;
+  }
+   
+  #gpasem4 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #343a40;
+  }
+  

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>CGPA</title>
+    <style>
+        body { 
+         background-color:snow;
+         font-family:sans-serif;
+        }
+        #sem1 {
+          background-color:tomato;
+          }
+        #sem2 {
+            background-color: aqua;
+           } 
+        #sem3 {
+            background-color:wheat;
+             }
+        #sem4 {
+            background-color:dimgray;
+           }
+    </style>
+</head>
+<body>
+  <h2 class="text-center">Department of IT</h2>
+    <h3 class="text-center">CGPA calculator</h3>
+    <!----Sem 1-->
+<div class="container-fluid">
+ <div  class="row">
+    <div id="sem1"class="col-12 col-md-6">
+     <h3 class="text-center">Select for  sem1 </h3>
+      <label>Professional english</label><br>
+       <select id="sem1-1">
+         <option value="O">O</option>
+         <option value="A+">A+</option>
+         <option value="A">A</option>
+         <option value="B+">B+</option>
+         <option value="B">B</option>
+         <option value="C">C</option>
+         </select><br>
+       <label>Calculus for enginners</label><br>
+      <select id="sem1-2">
+        <option value="O">O</option>
+        <option value="A+">A+</option>
+        <option value="A">A</option>
+        <option value="B+">B+</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+     </select><br>
+     <label>Engineering Physics</label><br>
+     <select id="sem1-3">
+        <option value="O">O</option>
+        <option value="A+">A+</option>
+        <option value="A">A</option>
+        <option value="B+">B+</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+     </select><br>
+     <label>Engineering Chemistry</label><br>
+     <select id="sem1-4">
+        <option value="O">O</option>
+        <option value="A+">A+</option>
+        <option value="A">A</option>
+        <option value="B+">B+</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+     </select><br>
+     <label>Problem solving and python programing</label><br>
+      <select id="sem1-5">
+        <option value="O">O</option>
+        <option value="A+">A+</option>
+        <option value="A">A</option>
+        <option value="B+">B+</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+     </select><br>
+     <label>Pspp laboratory</label><br>
+      <select id="sem1-6">
+        <option value="O">O</option>
+        <option value="A+">A+</option>
+        <option value="A">A</option>
+        <option value="B+">B+</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+     </select><br>
+     <label>Pysics and Chemistry lab</label><br>
+       <select id="sem1-7">
+        <option value="O">O</option>
+        <option value="A+">A+</option>
+        <option value="A">A</option>
+        <option value="B+">B+</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+       </select><br>
+      <button onclick="calculatesem1()">Calculate</button>
+      <h4 id="gpasem1"></h4>
+    </div>
+     
+<!---sem2-->
+<div  id="sem2" class="col-12 col-md-6">
+    <h3 class="text-center">Select for sem 2</h3>
+    <label>Communicative English</label><br>
+     <select id="sem2-1">
+       <option value="O">O</option>
+       <option value="A+">A+</option>
+       <option value="A">A</option>
+       <option value="B+">B+</option>
+       <option value="B">B</option>
+       <option value="C">C</option>
+       </select><br>
+     <label>Probability,Statistics and Linear Algebra</label><br>
+    <select id="sem2-2">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+   </select><br>
+   <label>Physics for Information Science</label><br>
+   <select id="sem2-3">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+   </select><br>
+   <label>Engineering Graphics</label><br>
+   <select id="sem2-4">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+   </select><br>
+   <label>Basic Electrial and Electonics Engineering</label><br>
+    <select id="sem2-5">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+   </select><br>
+   <label>Programing in C</label><br>
+    <select id="sem2-6">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+   </select><br>
+   <label>Engineering Practice lab</label><br>
+     <select id="sem2-7">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+  </select><br>
+  <label>Programing in C Lab</label><br>
+     <select id="sem2-8">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+  </select><br>
+  <label>Communication and soft skill lab </label><br>
+     <select id="sem2-9">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+  </select><br>
+  <button onclick="calculatesem2()">Calculate</button>
+  <h4 id="gpasem2"></h4>
+  </div>
+</div>
+
+<!----sem3-->
+<div class="row">
+  <div  id="sem3" class="col-12 col-md-6">
+    <h3 class="text-center">Select for sem 3</h3>
+    <label>Discrete Mathematics</label><br>
+     <select id="sem3-1">
+       <option value="O">O</option>
+       <option value="A+">A+</option>
+       <option value="A">A</option>
+       <option value="B+">B+</option>
+       <option value="B">B</option>
+       <option value="C">C</option>
+       </select><br>
+     <label>Computer Organization and Digital Principle </label><br>
+    <select id="sem3-2">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+   </select><br>
+   <label>Database Management system</label><br>
+   <select id="sem3-3">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+   </select><br>
+   <label>Data structures and Algorithms</label><br>
+   <select id="sem3-4">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+   </select><br>
+   <label>Object Oriented Programing</label><br>
+    <select id="sem3-5">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+   </select><br>
+   <label>Data structures and Algorithms lab</label><br>
+    <select id="sem3-6">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+   </select><br>
+   <label>Database Management systemlab</label><br>
+     <select id="sem3-7">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+  </select><br>
+  <label>Object Oriented Programing lab</label><br>
+     <select id="sem3-8">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+  </select><br>
+  <label>Professional lab </label><br>
+     <select id="sem3-9">
+      <option value="O">O</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+  </select><br>
+  <button onclick="calculatesem3()">Calculate</button>
+  <h4 id="gpasem3"></h4>
+  </div>
+
+ <!----sem4-->
+ <div  id="sem4" class="col-12 col-md-6">
+  <h3 class="text-center">Select for sem 4</h3>
+  <label>Object Oriented software Engineering</label><br>
+   <select id="sem4-1">
+     <option value="O">O</option>
+     <option value="A+">A+</option>
+     <option value="A">A</option>
+     <option value="B+">B+</option>
+     <option value="B">B</option>
+     <option value="C">C</option>
+     </select><br>
+   <label>Artifical Intellgence and Machine learning</label><br>
+  <select id="sem4-2">
+    <option value="O">O</option>
+    <option value="A+">A+</option>
+    <option value="A">A</option>
+    <option value="B+">B+</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+ </select><br>
+ <label>Foudation of Data Science</label><br>
+ <select id="sem4-3">
+    <option value="O">O</option>
+    <option value="A+">A+</option>
+    <option value="A">A</option>
+    <option value="B+">B+</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+ </select><br>
+ <label>Web Desgin Essentials</label><br>
+ <select id="sem4-4">
+    <option value="O">O</option>
+    <option value="A+">A+</option>
+    <option value="A">A</option>
+    <option value="B+">B+</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+ </select><br>
+ <label>Operating System</label><br>
+  <select id="sem4-5">
+    <option value="O">O</option>
+    <option value="A+">A+</option>
+    <option value="A">A</option>
+    <option value="B+">B+</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+ </select><br>
+ <label>Environment Science and Sustainbility</label><br>
+  <select id="sem4-6">
+    <option value="O">O</option>
+    <option value="A+">A+</option>
+    <option value="A">A</option>
+    <option value="B+">B+</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+ </select><br>
+ <label>Operating sysytem lab</label><br>
+   <select id="sem4-7">
+    <option value="O">O</option>
+    <option value="A+">A+</option>
+    <option value="A">A</option>
+    <option value="B+">B+</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+</select><br>
+<label>Data science lab</label><br>
+   <select id="sem4-8">
+    <option value="O">O</option>
+    <option value="A+">A+</option>
+    <option value="A">A</option>
+    <option value="B+">B+</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+</select><br>
+<button onclick="calculatesem4()">Calculate</button>
+<h4 id="gpasem4"></h4>
+</div>
+
+  
+  </div>
+</div>
+<h2 id="overallcgpa" ></h2>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="cgpa.js"></script>
+</body>
+</html>
